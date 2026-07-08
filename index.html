@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PBellARModel</title>
+
+    <script type="module"
+    src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js">
+    </script>
+
+    <style>
+        body {
+            margin: 0;
+            background: #000;
+        }
+
+        model-viewer {
+            width: 100vw;
+            height: 100vh;
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+</head>
+
+<body>
+
+<model-viewer
+    src="PBellARModel.glb"
+    alt="PBell AR Model"
+    ar
+    ar-modes="webxr scene-viewer quick-look"
+    camera-controls
+    auto-rotate
+    camera-orbit="0deg 75deg 2m"
+    scale="0.05 0.05 0.05"
+    shadow-intensity="1">
+    
+    <button slot="ar-button"
+    style="
+    position:absolute;
+    bottom:20px;
+    left:50%;
+    transform:translateX(-50%);
+    padding:15px 30px;
+    font-size:18px;
+    border-radius:10px;">
+        ดูใน AR
+    </button>
+
+</model-viewer>
+
+</body>
+</html>
